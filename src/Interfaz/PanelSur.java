@@ -7,21 +7,22 @@ import javax.swing.border.TitledBorder;
 
 public class PanelSur extends JPanel {
 
-    private JButton btnCambiar;
-    private JButton btnOpcion1;
-    private JButton btnOpcion2;
+	private JButton btnCambiar;
+	private JButton btnOp1;
+	private JButton btnOp2;
 
-    public PanelSur() {
+	public PanelSur() {
 
-        setLayout(new FlowLayout(FlowLayout.CENTER));
-        setBorder(new TitledBorder("Opciones"));
+		FlowLayout fl = new FlowLayout(FlowLayout.CENTER);
+		setLayout(fl);
+		setBorder(new TitledBorder("Opciones"));
 
-        btnCambiar = new JButton("Cambiar empleado");
-        btnOpcion1 = new JButton("Opción 1");
-        btnOpcion2 = new JButton("Opción 2");
+		btnCambiar = new JButton("Cambiar empleado");
+		btnOp1 = new JButton("Opción 1");
+		btnOp2 = new JButton("Opción 2");
 
-        add(btnCambiar);
-        add(btnOpcion1);
-        add(btnOpcion2);
-    }
+		add(btnCambiar);
+		add(btnOp1);
+		add(btnOp2);
+	}
 }

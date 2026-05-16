@@ -7,15 +7,16 @@ import javax.swing.JPanel;
 
 public class PanelNorte extends JPanel {
 
-    private JLabel lblBanner;
+	private JLabel banner;
 
-    public PanelNorte() {
+	public PanelNorte() {
 
-        setLayout(new BorderLayout());
+		BorderLayout bl = new BorderLayout();
+		setLayout(bl);
 
-        ImageIcon banner = new ImageIcon("src/Imagenes/Encabezadofinalhd.png");
-        lblBanner = new JLabel(banner);
+		ImageIcon img = new ImageIcon("src/Imagenes/Encabezadofinalhd.png");
+		banner = new JLabel(img);
 
-        add(lblBanner, BorderLayout.CENTER);
-    }
+		add(banner, BorderLayout.CENTER);
+	}
 }
